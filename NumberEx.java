@@ -61,7 +61,4 @@ public class NumberEx {
 	}
 	}
 		
-//	static int isPalindrome(int input) {
-//		
-//	}
-//}
+
