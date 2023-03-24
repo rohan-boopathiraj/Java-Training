@@ -1,0 +1,6 @@
+This is copied from file1.txt
+File1.txt contains multiple lines
+Third line 
+Fourth line
+...
+...
