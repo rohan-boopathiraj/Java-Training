@@ -1,25 +1,27 @@
 package Assingment2;
 
-class Base{
-	Base() throws Exception{
-		throw new Exception();
+
+  class Base{
+	public Base() throws Exception{
+		throw new Exception("Base class Exception");
 	}
 }
 
 class Derived extends Base {
-	Derived() throws Exception{
+	public Derived() {
 		try {
-			
+			super();
 		}
 		catch(Exception e){
-			e.printStackTrace();
-//			System.out.println(e.getMessage());
+			System.out.println("Error Handled");
+			System.out.println(e.getMessage());
+
 		}
 	}
 }
 
 public class Excercise6 {
-	public static void main(String[] args) throws Exception  {
-		new Derived();
+	public static void main(String[] args) {
+		Derived d = new Derived();
 	}
 }
