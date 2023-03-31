@@ -40,6 +40,7 @@ class CalculateArrival {
 		while ((totalHours / 8 > daysLeft)) {
 			dateTime = dateTime.plusDays(1);
 			if (isHoliday(dateTime)) {
+				
 				holiday++;
 			}
 			daysLeft++;
@@ -53,7 +54,7 @@ class CalculateArrival {
 	
 	public void SkipLeave() {
 		while(isHoliday(dateTime)){
-			dateTime = dateTime.plusDays(1).withHour(9);
+			dateTime = dateTime.plusDays(1);
 		}
 	}
 	
